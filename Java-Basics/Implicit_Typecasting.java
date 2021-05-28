@@ -1,4 +1,4 @@
-public class implicit_typecasting {
+public class Implicit_Typecasting {
     public static void main(String[] args) {
         int a = 1;
         char c = 'a';

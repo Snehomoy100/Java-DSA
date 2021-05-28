@@ -1,4 +1,4 @@
-public class explicit_typecasting {
+public class Explicit_Typecasting {
     public static void main(String[] args) {
         int a = 1;
         long b = a;
