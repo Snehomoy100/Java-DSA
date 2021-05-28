@@ -8,13 +8,13 @@ public class Data_Types {
         // Ans: A primitive data type specifies the size and type of variable values, and it has no additional methods.
 
 
-        int a = 100; // to store integer values & range is from -2^32 to 2^32. It takes 4 bytes (32 bits) of memory space.
+        int a = 100; // to store integer values & range is from -2^31 to 2^32-1. It takes 4 bytes (32 bits) of memory space.
 
-        long b = 575626359; // to store high valued integer values & the range is from -2^64 to 2^64. It takes 8 bytes (64 bits) of memory space.
+        long b = 575626359; // to store high valued integer values & the range is from -2^63 to 2^63-1. It takes 8 bytes (64 bits) of memory space.
 
-        short c = 12; // to store whole numbers from -2^16 to 2^16 & it takes 2 bytes of memory space.
+        short c = 12; // to store whole numbers from -2^15 to 2^15-1 & it takes 2 bytes of memory space.
 
-        byte i = 122; // to store small integers & range is from -128 to 127. It takes 1 byte of memory space.
+        byte i = 122; // to store small integers & range is from -128 to 127 (-2^7 to 2^7-1). It takes 1 byte of memory space.
 
         float d = 9.8f; // to store fractional numbers & range is from 6 to 7 decimal digits. It takes 4 bytes of memory space.
 
