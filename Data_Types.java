@@ -2,7 +2,7 @@ public class Data_Types {
     public static void main(String[] args) {
         int a = 100; // to store integer values & range is from -2^32 to 2^32. It takes 4 bytes (32 bits) of memory.
 
-        long b = 575626359; // to store high valued integer values & the range is from 2
+        long b = 575626359; // to store high valued integer values & the range is from -2^64 to 2^64. It takes 8 bytes (64 bits) of memory.
 
         short c = 12;
 
