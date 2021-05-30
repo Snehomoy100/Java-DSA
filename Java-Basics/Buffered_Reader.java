@@ -1,5 +1,7 @@
 import java.io.*;
 
+
+
 class Test {
     public static void main(String[] args) throws IOException{
 
@@ -10,6 +12,9 @@ class Test {
         int x = Integer.parseInt(br.readLine());
         System.out.println("Your entered value is: " + x);
     }
+
+
+    // int arr[] = new Array[10];
 }
 
 
