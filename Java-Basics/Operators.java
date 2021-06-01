@@ -53,7 +53,10 @@ class Logical_Operator {
         } else{
             System.out.println("You don't have an account!");
         }
-        
+
         input.close();
+
+        boolean x = true;
+        System.out.println(!x);
     }
 }
