@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Operators {
+class BasicOperators {
     public static void main(String[] args){
 
         // Operators in Java.
