@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Operators {
     public static void main(String[] args){
-        // operators
+        
+        // Operators in Java.
     
-
         // Artithmetic operators
         int a = 10;
         int b = 12;
@@ -53,8 +53,8 @@ class Logical_Operator {
         } else{
             System.out.println("You don't have an account!");
         }
-
         input.close();
+
 
         boolean x = true;
         System.out.println(!x); // logical NOT operator.
