@@ -1,4 +1,6 @@
-public class Operators {
+import java.util.Scanner;
+
+class Operators {
     public static void main(String[] args){
         // operators
     
@@ -27,5 +29,31 @@ public class Operators {
         System.out.println(x);
         int s = x = y; // here comes the associativity with is Right to Left for assignment operators.
         System.out.println(s);
+    }
+}
+
+
+
+class Logical_Operator {
+    public static void main(String[] args) {
+
+        // Logical operator
+        String usr = "User"; 
+        String pwd = "Password";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your user id: ");
+        String iu = input.next();
+        System.out.println("Enter your password: ");
+        String ip = input.next();
+
+        if (usr.equals(iu) && pwd.equals(ip)) { // logical AND operator
+            System.out.println("You're Welcome!");
+        } else if(usr.equals(iu) || pwd.equals(ip)){ // logical OR operator
+            System.out.println("Your user id or password is incorrect!");
+        } else{
+            System.out.println("You don't have an account!");
+        }
+        
+        input.close();
     }
 }
