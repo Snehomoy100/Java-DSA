@@ -3,7 +3,7 @@ class Point{
         int y;
         int z;
         boolean a;
-        // char h = ' ';
+        char h = ' ';
 }
     
 
