@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Operators {
     public static void main(String[] args){
-        
+
         // Operators in Java.
     
         // Artithmetic operators
@@ -34,7 +34,7 @@ class Operators {
 
 
 
-class Logical_Operator {
+class LogicalOperator {
     public static void main(String[] args) {
 
         // Logical operator
@@ -58,5 +58,16 @@ class Logical_Operator {
 
         boolean x = true;
         System.out.println(!x); // logical NOT operator.
+    }
+}
+
+class ShortCircuit {
+    public static void main(String[] args) {
+        String s = null;
+        if (s != null && s.length() > 100) { // short circuit
+            System.out.println("Invalid");
+        } else {
+            System.out.println("Valid");
+        }
     }
 }
