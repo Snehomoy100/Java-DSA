@@ -57,6 +57,6 @@ class Logical_Operator {
         input.close();
 
         boolean x = true;
-        System.out.println(!x);
+        System.out.println(!x); // logical NOT operator.
     }
 }
