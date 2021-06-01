@@ -7,7 +7,7 @@ public class ConditionalStatement {
         System.out.println("Enter a number: ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        if (n % 2 == 0) {
+        if (n % 2 == 0) { // this block will execute if the cndition is true.
             System.out.println(n + "is an even no.");
         } else {
             System.out.println(n + "is an odd no.");
