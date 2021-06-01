@@ -37,24 +37,24 @@ class Operators {
 class Logical_Operator {
     public static void main(String[] args) {
 
-        // // Logical operator
-        // String usr = "User"; 
-        // String pwd = "Password";
-        // Scanner input = new Scanner(System.in);
-        // System.out.println("Enter your user id: ");
-        // String iu = input.next();
-        // System.out.println("Enter your password: ");
-        // String ip = input.next();
+        // Logical operator
+        String usr = "User"; 
+        String pwd = "Password";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your user id: ");
+        String iu = input.next();
+        System.out.println("Enter your password: ");
+        String ip = input.next();
 
-        // if (usr.equals(iu) && pwd.equals(ip)) { // logical AND operator
-        //     System.out.println("You're Welcome!");
-        // } else if(usr.equals(iu) || pwd.equals(ip)){ // logical OR operator
-        //     System.out.println("Your user id or password is incorrect!");
-        // } else{
-        //     System.out.println("You don't have an account!");
-        // }
+        if (usr.equals(iu) && pwd.equals(ip)) { // logical AND operator
+            System.out.println("You're Welcome!");
+        } else if(usr.equals(iu) || pwd.equals(ip)){ // logical OR operator
+            System.out.println("Your user id or password is incorrect!");
+        } else{
+            System.out.println("You don't have an account!");
+        }
 
-        // input.close();
+        input.close();
 
         boolean x = true;
         System.out.println(!x);
