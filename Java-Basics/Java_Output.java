@@ -5,7 +5,8 @@ public class Java_Output {
         double z = Math.PI;
 
         // normal outputs in Java.
-        System.out.print(x);
+        System.out.println("Snehomoy");
+        System.out.println(x);
         System.out.println(z);
 
 
