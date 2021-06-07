@@ -31,13 +31,19 @@ class InfiniteLoops {
             System.out.println("Maitra");
         }
 
-        int j = 1; // example of infinite loop using while
-        while (j < 15) {
-            System.out.println("Hello");
-            // reinitialisation part is missing
-        }
+        // int j = 1; // example of infinite loop using while
+        // while (j < 15) {
+        //     System.out.println("Hello");
+        //     // reinitialisation part is missing
+        // }
 
+        int k = 0;
+        do{ // example of do-while loop
 
-        
+            // this do block runs at least once, even if the condition inside of the while block is false
+            System.out.println("SNEHOMOY MAITRA");
+            // reinitialisatio part is missing
+        } while(k < 10);
+
     }
 }
