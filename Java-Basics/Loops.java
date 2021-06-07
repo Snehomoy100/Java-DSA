@@ -27,9 +27,9 @@ class Loops { // Loops in Java
 class InfiniteLoops {
     public static void main(String[] args) {
 
-        // for(;true;){ // example of infinite loop using for
-        //     System.out.println("Maitra");
-        // }
+        for(;true;){ // example of infinite loop using for
+            System.out.println("Maitra");
+        }
 
         int j = 1; // example of infinite loop using while
         while (j < 15) {
