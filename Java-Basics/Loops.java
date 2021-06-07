@@ -13,7 +13,7 @@ class Loops { // Loops in Java
         }
         
         int j = 0;
-        do{
+        do{ // example of do-while loop
             System.out.println("SNEHOMOY MAITRA");
             j++;
         } while(j < 10);
