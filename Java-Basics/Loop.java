@@ -17,8 +17,15 @@ class Loop { // Loops in Java
 
 class InfiniteLoop {
     public static void main(String[] args) {
-        for(;true;){ // example of infinite loop
+
+        for(;true;){ // example of infinite loop using for
             System.out.println("Maitra");
+        }
+
+        int j = 1; // example of infinite loop using while
+        while (j < 15) {
+            System.out.println("Hello");
+            // reinitialisation part is missing
         }
     }
 }
