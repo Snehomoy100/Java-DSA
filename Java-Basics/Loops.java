@@ -11,6 +11,12 @@ class Loops { // Loops in Java
             System.out.println("Snehomoy");
             i = i + 2;
         }
+        
+        int j = 0;
+        do{
+            System.out.println("SNEHOMOY MAITRA");
+            j++;
+        } while(j < 10);
     }
 }
 
