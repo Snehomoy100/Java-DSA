@@ -36,5 +36,8 @@ class InfiniteLoops {
             System.out.println("Hello");
             // reinitialisation part is missing
         }
+
+
+        
     }
 }
