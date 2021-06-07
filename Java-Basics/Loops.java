@@ -1,4 +1,4 @@
-class Loop { // Loops in Java
+class Loops { // Loops in Java
     public static void main(String[] args){
         for(int i = 0; i<10; i++){ // example of for loop
             System.out.println("Snehomoy");
@@ -15,7 +15,7 @@ class Loop { // Loops in Java
 
 
 
-class InfiniteLoop {
+class InfiniteLoops {
     public static void main(String[] args) {
 
         for(;true;){ // example of infinite loop using for
