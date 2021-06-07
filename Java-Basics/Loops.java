@@ -14,6 +14,8 @@ class Loops { // Loops in Java
         
         int j = 0;
         do{ // example of do-while loop
+
+            // this do block runs at least once, even if the condition inside of the while block is false
             System.out.println("SNEHOMOY MAITRA");
             j++;
         } while(j < 10);
