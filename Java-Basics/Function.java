@@ -25,7 +25,7 @@ public class Function {
     }
 
     // function to print all the numbers upto n
-    public static void noUpton(int n){
+    public static void noUpton(int n){ // void function returns nothing
         if(n <= 0){
             return; // return means termination of the function
         }
