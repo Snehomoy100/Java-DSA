@@ -26,7 +26,7 @@ public class Function {
 
     // function to print all the numbers upto n
     public static void noUpton(int n){
-        for(int i = 0; i <= n; i++){
+        for(int i = 1; i <= n; i++){
             System.out.println(i);
         }
     }
@@ -47,7 +47,7 @@ public class Function {
         boolean ansPrime = isPrime(19);
         System.out.println(ansPrime);
         
-
+        noUpton(8);
         // the formula of NcR is N!/(R! * (N - R)!)
         int NcR = numerator/(denominator_one * denominator_two);
         System.out.println(NcR);
