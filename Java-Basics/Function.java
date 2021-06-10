@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class Function {
+
+    // function of factorial
+    public static int factorial(int n){
+        int ans = 1;
+        for(int i = 1; i <= n; i++){
+            ans = ans * i;
+        }
+        return ans;
+    }
     
     // A program to find the NcR
     public static void main(String[] args) {
@@ -19,11 +28,8 @@ public class Function {
         }
 
         int denominator_two = 1;
-        for(int i = 1; i <= (n - r); i++){
-            denominator_two = denominator_two * i;
-        }
         
-        
+
         // the formula of NcR is N!/(R! * (N - R)!)
         int NcR = numerator/(denominator_one * denominator_two);
         System.out.println(NcR);
