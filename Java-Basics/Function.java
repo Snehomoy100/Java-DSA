@@ -26,6 +26,9 @@ public class Function {
 
     // function to print all the numbers upto n
     public static void noUpton(int n){
+        if(n <= 0){
+            return; // return means termination of the function
+        }
         for(int i = 1; i <= n; i++){
             System.out.println(i);
         }
