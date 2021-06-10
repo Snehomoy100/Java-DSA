@@ -23,9 +23,7 @@ public class Function {
         }
 
         int denominator_one = 1;
-        for(int i = 1; i <= r; i++){
-            denominator_one = denominator_one * i;
-        }
+        
 
         int denominator_two = 1;
         
