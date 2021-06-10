@@ -11,6 +11,8 @@ public class Function {
         return ans;
     }
 
+
+    // function to check a no is prime or not
     public static boolean isPrime(int n){
         int d = 2;
         while(d < n){
@@ -20,6 +22,13 @@ public class Function {
             d++;
         }
         return true;
+    }
+
+    // function to print all the numbers upto n
+    public static void noUpton(int n){
+        for(int i = 0; i <= n; i++){
+            System.out.println(i);
+        }
     }
     
     // A program to find the NcR
