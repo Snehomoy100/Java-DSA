@@ -19,10 +19,10 @@ public class Function {
         
         int numerator = factorial(n);
 
-        int denominator_one = 1;
+        int denominator_one = factorial(r);
         
 
-        int denominator_two = 1;
+        int denominator_two = factorial(n - r);
         
 
         // the formula of NcR is N!/(R! * (N - R)!)
