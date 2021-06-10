@@ -50,7 +50,7 @@ public class Function {
         boolean ansPrime = isPrime(19);
         System.out.println(ansPrime);
         
-        noUpton(8);
+        noUpton(-8);
         // the formula of NcR is N!/(R! * (N - R)!)
         int NcR = numerator/(denominator_one * denominator_two);
         System.out.println(NcR);
