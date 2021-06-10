@@ -34,6 +34,9 @@ public class Function {
         
 
         int denominator_two = factorial(n - r);
+
+        boolean ansPrime = isPrime(19);
+        System.out.println(ansPrime);
         
 
         // the formula of NcR is N!/(R! * (N - R)!)
