@@ -18,9 +18,6 @@ public class Function {
         int r = input.nextInt();
         
         int numerator = 1;
-        for(int i = 1; i <= n; i++){
-            numerator = numerator * i;
-        }
 
         int denominator_one = 1;
         
