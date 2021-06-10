@@ -17,7 +17,7 @@ public class Function {
         int n = input.nextInt();
         int r = input.nextInt();
         
-        int numerator = 1;
+        int numerator = factorial(n);
 
         int denominator_one = 1;
         
