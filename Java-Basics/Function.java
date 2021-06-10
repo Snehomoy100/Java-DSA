@@ -23,6 +23,8 @@ public class Function {
             denominator_two = denominator_two * i;
         }
         
+        
+        // the formula of NcR is N!/(R! * (N - R)!)
         int NcR = numerator/(denominator_one * denominator_two);
         System.out.println(NcR);
 
