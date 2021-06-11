@@ -1,3 +1,5 @@
+import jdk.nashorn.internal.codegen.types.NumericType;
+
 public class PassByValue {
     
     public static int increment(int n){
@@ -5,8 +7,8 @@ public class PassByValue {
         return n;
     }
     public static void main(String[] args) {
-        int a = 10;
-        a = increment(a);
-        System.out.println(a); // this prints 10 because of the pass by value
+        int n = 10;
+        n = increment(n); // Output: 20
+        System.out.println(n); // this prints 10 because of the pass by value 
     }
 }
