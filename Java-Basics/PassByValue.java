@@ -1,4 +1,3 @@
-import jdk.nashorn.internal.codegen.types.NumericType;
 
 public class PassByValue {
     
