@@ -9,5 +9,7 @@ public class Array {
 
         double dArray[] = new double[5];
         System.out.println(dArray[4]); 
+
+        System.out.println(dArray[5]); // ArrayIndexOutOfBoundException
     }
 }
