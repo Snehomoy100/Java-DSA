@@ -1,7 +1,17 @@
 import java.util.Scanner;
 
 public class UserInput{
-    public static void main(String[] args) {
+
+
+    public static void printInput(int arr[]){
+        int n = arr.length;
+        for(int j=0; j<n; j++){
+            System.out.println(arr[j]);
+        }
+    }
+
+
+    public static int[] takeInput(){ // return type is int because it's returning the integer array. 
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int arr[] = new int[n];
@@ -11,14 +21,12 @@ public class UserInput{
             arr[i] = input.nextInt();
         }
 
-        System.out.println("Your array is: ");
-
-
+        return arr;
+    }
+    public static void main(String[] args) {
         
-        for(int j=0; j<n; j++){
-            System.out.println(arr[j]);
-        }
-
-        input.close();
+        int arr[] = takeInput();
+        System.out.println("Your array is: ");
+        printInput(arr);
     }
 }
