@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ArraySum {
+    public static void arraySum(int arr[]){
+        int sum = 0;
+        for(int i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+        System.out.println(sum);
+
+    }
+
+    public static int[] takeInput(){
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int arr[] = new int[n];
+
+        for(int i = 0; i < n; i++){
+            arr[i] = input.nextInt();
+        }
+
+        return arr;
+    }
+    public static void main(String[] args) {
+        int arr[] = takeInput();
+        arraySum(arr);
+    }
+
+}
