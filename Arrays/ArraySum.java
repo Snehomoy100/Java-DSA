@@ -23,6 +23,7 @@ public class ArraySum {
     }
     public static void main(String[] args) {
         int arr[] = takeInput();
+        System.out.println("Sum of the elements of your array is : ");
         arraySum(arr);
     }
 
