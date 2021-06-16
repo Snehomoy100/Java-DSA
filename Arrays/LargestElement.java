@@ -16,7 +16,6 @@ public class LargestElement {
     public static int[] takeInput(){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        System.out.println("No. of elements in the array: ");
         int arr[] = new int[n];
 
         for(int index = 0; index<n; index++){
@@ -28,8 +27,11 @@ public class LargestElement {
     }
 
     public static void main(String[] args) {
+        System.out.println("No. of elements in the array: ");
         int arr[] = takeInput();
         int largestOfArray = largestInArrray(arr);
         System.out.println("Largest element in the array is: " + largestOfArray);
     }
+
+
 }
