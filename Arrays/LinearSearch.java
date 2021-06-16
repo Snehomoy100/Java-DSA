@@ -25,9 +25,12 @@ public class LinearSearch {
         return arr;
     }
     public static void main(String[] args) {
+        
         int searchElement = 10;
         int arr[] = takeInput();
         int searchIndex = linearSearch(arr, searchElement);
-        System.out.println(searchIndex);
+        System.out.println("The index of the searched element is: " + searchIndex);
+
+        
     }
 }
