@@ -21,6 +21,8 @@ public class ArraySum {
 
         return arr;
     }
+
+
     public static void main(String[] args) {
         int arr[] = takeInput();
         System.out.println("Sum of the elements of your array is : ");
