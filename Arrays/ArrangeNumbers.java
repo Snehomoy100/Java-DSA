@@ -1,5 +1,4 @@
 
-
 public class ArrangeNumbers {
 
     public static void arrangeNumbers(int[] arr, int sizeOfArray){
