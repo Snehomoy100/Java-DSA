@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class ArrangeNumbers {
 
@@ -19,4 +19,8 @@ public class ArrangeNumbers {
             }
         }
     }
+    public static void main(String[] args) {
+        arrangeNumbers(arr, 7);
+    }
+    
 }
