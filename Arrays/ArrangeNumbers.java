@@ -1,4 +1,5 @@
 
+
 public class ArrangeNumbers {
 
     public static void arrangeNumbers(int[] arr, int sizeOfArray){
@@ -18,13 +19,9 @@ public class ArrangeNumbers {
             }
         }
     }
+
     public static void main(String[] args) {
-        int arr[] = {};
-        int sizeOfArray = arr.length;
-        arrangeNumbers(arr, sizeOfArray);
-        for(int i = 0; i < sizeOfArray; i++){
-            System.out.println(arr);
-        }
+
     }
     
 }
