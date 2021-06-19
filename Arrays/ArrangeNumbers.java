@@ -1,8 +1,7 @@
-import java.util.Scanner;
 
 public class ArrangeNumbers {
 
-    public static void arrangeNumbers(int arr[], int sizeOfArray){
+    public static void arrangeNumbers(int[] arr, int sizeOfArray){
         int left = 0;
         int right = sizeOfArray - 1;
         int value = 1;
@@ -20,7 +19,12 @@ public class ArrangeNumbers {
         }
     }
     public static void main(String[] args) {
-        arrangeNumbers(arr, 7);
+        int arr[] = {};
+        int sizeOfArray = arr.length;
+        arrangeNumbers(arr, sizeOfArray);
+        for(int i = 0; i < sizeOfArray; i++){
+            System.out.println(arr);
+        }
     }
     
 }
