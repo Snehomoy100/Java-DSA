@@ -32,6 +32,8 @@ public class SwapElements {
     public static void main(String[] args) {
         int arr[] = takeInput();
         swapElements(arr);
+        System.out.println();
+        System.out.println("After swapping the elements of the array is: ");
         printArray(arr);
     }
 }
