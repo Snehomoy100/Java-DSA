@@ -1,5 +1,9 @@
 public class UniqueElement {
-    public static void main(String[] args) {
+
+    public static int uniqueElement(){
         
+    }
+    public static void main(String[] args) {
+
     }
 }
