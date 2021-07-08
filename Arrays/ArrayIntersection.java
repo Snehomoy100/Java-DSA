@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 class BruteForceSolution {
 
+    public static
 
 
 
