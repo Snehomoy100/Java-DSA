@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class FindDuplicate {
+class BruteForceSolution {
 	
 	public static int findDuplicate(int arr[]){
 		for(int i=0; i<arr.length; i++){
@@ -16,6 +16,8 @@ class FindDuplicate {
 		return Integer.MAX_VALUE;
 	}
 
+
+
 	public static int[] takeInput() {
 		Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -29,13 +31,14 @@ class FindDuplicate {
 	}
 
 
-
-
 	public static void main(String[] args) {
 		int[] arr = takeInput();
 		int duplicateNumber = findDuplicate(arr);
 		System.out.println("The Duplicate element in the Array is: " + duplicateNumber);
 	}
+
+	// Time complexity of this solution is: O(n^2)
+
 }
 
 
@@ -58,6 +61,7 @@ class MostOptimalSolution {
 		return answer;
 	}
 
+
 	public static int[] takeInput() {
 		Scanner input = new Scanner(System.in);
 		int n = input.nextInt();
@@ -67,10 +71,16 @@ class MostOptimalSolution {
 		}
 		return arr;
 	}
+
+
 	public static void main(String[] args) {
 		int[] arr = takeInput();
 		int duplicateNumber = findTheDuplicate(arr);
 		System.out.println();
 		System.out.println("The duplicate element is: " + duplicateNumber);
 	}
+
+	// Time Complexity of this solution is: O(n)
+
+
 }
