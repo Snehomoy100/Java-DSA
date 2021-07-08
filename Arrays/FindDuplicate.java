@@ -4,16 +4,17 @@ import java.util.Scanner;
 public class FindDuplicate {
 	
 	public static int findDuplicate(int arr[]){
-		int ans;
 		for(int i=0; i<arr.length; i++){
 			for(int j=0; j<arr.length; j++){
-				if(arr[i] == arr[j]){
-					ans = arr[i];
+				if(i != j){
+					if(arr[i] == arr[j]){
+						return arr[i];
+					}
 				}
 			}
 		}
 
-		return ans;
+		return Integer.MAX_VALUE;
 	}
 
 	public static int[] takeInput() {
@@ -34,6 +35,6 @@ public class FindDuplicate {
 	public static void main(String[] args) {
 		int[] arr = takeInput();
 		int duplicateNumber = findDuplicate(arr);
-		System.out.println(duplicateNumber);
+		System.out.println("The Duplicate element in the Array is: " + duplicateNumber);
 	}
 }
