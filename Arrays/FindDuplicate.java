@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-
-public class FindDuplicate {
+class FindDuplicate {
 	
 	public static int findDuplicate(int arr[]){
 		for(int i=0; i<arr.length; i++){
@@ -36,5 +35,42 @@ public class FindDuplicate {
 		int[] arr = takeInput();
 		int duplicateNumber = findDuplicate(arr);
 		System.out.println("The Duplicate element in the Array is: " + duplicateNumber);
+	}
+}
+
+
+
+
+
+
+class MostOptimalSolution {
+	
+	public static int findTheDuplicate(int arr[]) {
+		int answer = 0;
+		for(int i=0; i<arr.length; i++){
+			answer = answer ^ arr[i]; // XOR of every element in the array
+		}
+		for(int j=0; j <= (arr.length - 2); j++){
+			answer = answer ^ j; // XOR of elements in the range from 0 to (n-2)
+		}
+		
+
+		return answer;
+	}
+
+	public static int[] takeInput() {
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++){
+			arr[i] = input.nextInt();
+		}
+		return arr;
+	}
+	public static void main(String[] args) {
+		int[] arr = takeInput();
+		int duplicateNumber = findTheDuplicate(arr);
+		System.out.println();
+		System.out.println("The duplicate element is: " + duplicateNumber);
 	}
 }
