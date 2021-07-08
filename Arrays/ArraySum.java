@@ -10,6 +10,8 @@ public class ArraySum {
 
     }
 
+    
+
     public static int[] takeInput(){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -23,10 +25,12 @@ public class ArraySum {
     }
 
 
+
     public static void main(String[] args) {
         int arr[] = takeInput();
         System.out.println("Sum of the elements of your array is : ");
         arraySum(arr);
+        System.out.println("This is done using Sublime Text Editor");
     }
 
 }
