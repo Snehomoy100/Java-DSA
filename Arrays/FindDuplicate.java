@@ -50,9 +50,11 @@ class MostOptimalSolution {
 	
 	public static int findTheDuplicate(int arr[]) {
 		int answer = 0;
+		
 		for(int i=0; i<arr.length; i++){
 			answer = answer ^ arr[i]; // XOR of every element in the array
 		}
+
 		for(int j=0; j <= (arr.length - 2); j++){
 			answer = answer ^ j; // XOR of elements in the range from 0 to (n-2)
 		}
