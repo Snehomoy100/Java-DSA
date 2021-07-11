@@ -13,27 +13,27 @@ public class Function {
     }
 
 
-    // // function to check a no is prime or not
-    // public static boolean isPrime(int n){
-    //     int d = 2;
-    //     while(d < n){
-    //         if (n % d == 0) {
-    //             return false;
-    //         }
-    //         d++;
-    //     }
-    //     return true;
-    // }
+    // function to check a no is prime or not
+    public static boolean isPrime(int n){
+        int d = 2;
+        while(d < n){
+            if (n % d == 0) {
+                return false;
+            }
+            d++;
+        }
+        return true;
+    }
 
-    // // function to print all the numbers upto n
-    // public static void noUpton(int n){ // void function returns nothing
-    //     if(n <= 0){
-    //         return; // return means termination of the function
-    //     }
-    //     for(int i = 1; i <= n; i++){
-    //         System.out.println(i);
-    //     }
-    // }
+    // function to print all the numbers upto n
+    public static void noUpton(int n){ // void function returns nothing
+        if(n <= 0){
+            return; // return means termination of the function
+        }
+        for(int i = 1; i <= n; i++){
+            System.out.println(i);
+        }
+    }
     
     // A program to find the NcR
     public static void main(String[] args) {
@@ -48,8 +48,8 @@ public class Function {
 
         int denominator_two = factorial(n - r);
 
-        // boolean ansPrime = isPrime(19);
-        // System.out.println(ansPrime);
+        boolean ansPrime = isPrime(19);
+        System.out.println(ansPrime);
         
         // noUpton(-8);
         // the formula of NcR is N!/(R! * (N - R)!)
