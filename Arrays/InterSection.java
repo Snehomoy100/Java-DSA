@@ -21,10 +21,6 @@ public class InterSection {
     
     
     
-    
-    
-    
-    
     public static int[] takeInput(){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -38,6 +34,9 @@ public class InterSection {
     
     
     public static void main(String[] args) {
-        
+        int[] arr1 = takeInput();
+        int[] arr2 = takeInput();
+        System.out.println("Elements from the Intersections are: ");
+        interSection(arr1, arr2);
     }
 }
