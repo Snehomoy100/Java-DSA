@@ -18,8 +18,7 @@ public class InterSection {
         
     }
     
-    
-    
+
     
     public static int[] takeInput(){
         Scanner input = new Scanner(System.in);
@@ -39,4 +38,6 @@ public class InterSection {
         System.out.println("Elements from the Intersections are: ");
         interSection(arr1, arr2);
     }
+
+    // Time Complexity: O(n * m) n & m is the size of two arrays consequently
 }
