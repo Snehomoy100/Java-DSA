@@ -7,6 +7,8 @@ public class AllPairs {
             }
         }
     }
+
+    
     public static void main(String[] args) {
         int[] arr = {1, 3, 7, 8, 4, 2};
         printAllPairs(arr);
