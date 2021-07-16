@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class ArrangeNumbers {
+    
 
     public static void arrangeNumbers(int[] arr){
         int left = 0;
@@ -22,7 +23,6 @@ public class ArrangeNumbers {
 
 
 
-
     public static int[] takeInput(){
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -35,11 +35,15 @@ public class ArrangeNumbers {
     }
 
 
+
+
     public static void printArray(int[] arr){
         for(int i=0; i<arr.length; i++){
             System.out.println(arr[i]);
         }
     }
+
+
 
     public static void main(String[] args) {
         int[] arr = takeInput();
