@@ -1,3 +1,4 @@
+package ArrayBasics;
 import java.util.Scanner;
 
 public class ArrangeNumbers {
