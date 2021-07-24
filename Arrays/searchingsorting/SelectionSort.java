@@ -1,29 +1,30 @@
 package searchingsorting;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class SelectionSort {
     
 
     public static void selectionSort(int[] arr){
         // Inserting element at the ith index
-        
-        for(int i=0; i<(arr.length - 1); i++){
+        int n = arr.length;
+        for(int i=0; i<(n - 1); i++){
+
             int minELement = Integer.MAX_VALUE;
             int minIndex = -1;
 
             // min element at the jth index
-            for(int j=i; j<(arr.length -1); j++){
-                if(minELement < arr[j]){
+            for(int j=i; j<n; j++){
+                if(arr[j] < minELement){
                     minELement = arr[j];
                     minIndex = j;
                 }
             }
 
             //swap the element at ith index with minIndex
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
+            int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i] = temp;
         }
     }
 
@@ -34,19 +35,19 @@ public class SelectionSort {
         }
     }
 
-    public static int[] takeInput(){
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int[] arr = new int[n];
-        for(int i=0; i<n; i++){
-            arr[i] = input.nextInt();
-        }
+    // public static int[] takeInput(){
+    //     Scanner input = new Scanner(System.in);
+    //     int n = input.nextInt();
+    //     int[] arr = new int[n];
+    //     for(int i=0; i<n; i++){
+    //         arr[i] = input.nextInt();
+    //     }
 
-        return arr;
-    }
+    //     return arr;
+    // }
 
     public static void main(String[] args) {
-        int[] arr = takeInput();
+        int[] arr = {45, 0, 98, 12, 1, 4};
         selectionSort(arr);
         printArray(arr);
     }
