@@ -1,6 +1,6 @@
 package searchingsorting;
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class SelectionSort {
     
@@ -34,20 +34,21 @@ public class SelectionSort {
             System.out.println(arr[i]);
         }
     }
+    
 
-    // public static int[] takeInput(){
-    //     Scanner input = new Scanner(System.in);
-    //     int n = input.nextInt();
-    //     int[] arr = new int[n];
-    //     for(int i=0; i<n; i++){
-    //         arr[i] = input.nextInt();
-    //     }
+    public static int[] takeInput(){
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] arr = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i] = input.nextInt();
+        }
 
-    //     return arr;
-    // }
+        return arr;
+    }
 
     public static void main(String[] args) {
-        int[] arr = {45, 0, 98, 12, 1, 4};
+        int[] arr = takeInput();
         selectionSort(arr);
         printArray(arr);
     }
