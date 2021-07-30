@@ -3,6 +3,9 @@ package searchingsorting;
 public class Send0sToEnd {
     
     public static void send0sToEnd(int[] arr){
+
+        // Classic twp pointer approach which takes no extra space & does the thing in place
+
         if(arr.length==0 || arr.length==1)
             return;
         
@@ -21,6 +24,8 @@ public class Send0sToEnd {
             }
         }
     }
+
+    
 
     public static void printArray(int[] arr){
         for(int i=0; i<arr.length; i++){
