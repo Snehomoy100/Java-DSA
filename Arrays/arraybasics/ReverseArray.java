@@ -3,6 +3,9 @@ package arraybasics;
 public class ReverseArray {
 
     public static void reverseArray(int[] arr){
+
+        // Basic swapping 
+
         int i = 0;
         int j = (arr.length - 1);
         int temp;
