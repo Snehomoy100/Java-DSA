@@ -1,4 +1,4 @@
-package ArrayBasics;
+package arraybasics;
 public class AllPairs {
 
     public static void printAllPairs(int[] arr){

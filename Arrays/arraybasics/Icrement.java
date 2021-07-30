@@ -1,4 +1,4 @@
-package ArrayBasics;
+package arraybasics;
 public class Icrement {
     // Pass by value example in non-primitives
 

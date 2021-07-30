@@ -1,4 +1,4 @@
-package ArrayBasics;
+package arraybasics;
 import java.util.Scanner;
 
 class BruteForceSolution {

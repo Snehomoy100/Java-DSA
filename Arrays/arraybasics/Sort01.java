@@ -1,4 +1,4 @@
-package ArrayBasics;
+package arraybasics;
 
 public class Sort01 {
     
