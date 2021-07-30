@@ -1,4 +1,4 @@
-package arraybasics;
+package searchingsorting;
 
 public class Send0sToEnd {
     
