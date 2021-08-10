@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Java-Basics",
-        "Arrays"
+        "Arrays",
+        "Strings"
     ]
 }
