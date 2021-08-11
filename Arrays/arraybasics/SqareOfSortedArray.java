@@ -2,11 +2,16 @@ package arraybasics;
 
 public class SqareOfSortedArray {
 
+    // two-pointer approach
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+
     public static int[] sortedSquares(int[] nums) {
         int[] result = new int[nums.length];
-        int minElement = 0;
-        int maxElement = nums.length - 1;
-        int index = nums.length - 1;
+        int minElement = 0; // first pointer
+        int maxElement = nums.length - 1; // second pointer
+        int index = nums.length - 1; // for inserting the elements in the result array
         
         while(minElement <= maxElement){
             int val1 = nums[minElement] * nums[minElement];
