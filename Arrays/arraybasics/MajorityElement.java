@@ -1,8 +1,11 @@
 package arraybasics;
 
-public class MajorityElement {
+class MajorityElementBruteForce {
 
     // Brute-Force solution
+
+    // T.C -> O(n^2)
+    // S.C -> O(1)
     
     public static int majorityElement(int[] nums) {
         int majorityCounter = (nums.length/2);
