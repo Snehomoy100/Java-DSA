@@ -17,6 +17,7 @@ class MajorityElementBruteForce {
     // S.C -> O(1)
     
     public static int majorityElement(int[] nums) {
+        
         int majorityCounter = (nums.length/2);
         for(int i : nums){
             int counter = 0;
@@ -36,7 +37,7 @@ class MajorityElementBruteForce {
     }
     
     public static void main(String[] args) {
-        int[] nums = {3, 2, 3};
+        int[] nums = {5};
         int majorityElementIs = majorityElement(nums);
         System.out.println(majorityElementIs);
     }
