@@ -1,5 +1,14 @@
 package arraybasics;
 
+
+class MajorityElementMostOptimal{
+    public static void main(String[] args) {
+        
+    }
+}
+
+
+
 class MajorityElementBruteForce {
 
     // Brute-Force solution
@@ -32,3 +41,5 @@ class MajorityElementBruteForce {
         System.out.println(majorityElementIs);
     }
 }
+
+
