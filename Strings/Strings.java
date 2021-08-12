@@ -5,12 +5,13 @@ public class Strings {
 
         // Strings are char arrays under the hood
         String str1 = "Snehomoy";
-        String str2 = ""; // empty string
+        String str2 = "Snehomoya"; // empty string
         System.out.println(str2.length());
         String str3 = " "; // string with only one element
         System.out.println(str3.length());
         System.out.println(str1.charAt(3));
         System.out.println(str1.length());
         System.out.println(str1.contains(str3)); // return tyoe is boolean
+        System.out.println(str1.compareTo(str2)); // return tyoe is integer
     }
 }
