@@ -17,6 +17,7 @@ public class Strings {
         // How string is being stored inside of the memory
         String str = "abcd"; // stored inside of String Pool in the heap memory
         String newStr = new String("abcd"); // stored inside of the Heap memory
+        System.out.println(str == newStr); // returns false
 
     }
 }
