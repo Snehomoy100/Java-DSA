@@ -15,7 +15,7 @@ public class Strings {
         System.out.println(str1.compareTo(str2)); // return type is integer
 
         // How string is being stored inside of the memory
-        String str = "abcd"; // stored inside of String Pool
+        String str = "abcd"; // stored inside of String Pool in the heap memory
         String newStr = new String("abcd"); // stored inside of the Heap memory
 
     }
