@@ -13,10 +13,10 @@ public class PalindromeOrNot {
         while(left < right){
             if(str.charAt(left) != str.charAt(right)){
                 return false;
+            } else{
+                right--;
+                left++;
             }
-
-            right--;
-            left++;
         }
 
         return true;
