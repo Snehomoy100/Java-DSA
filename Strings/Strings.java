@@ -13,6 +13,8 @@ public class Strings {
         System.out.println(str1.contains(str3)); // return type is boolean
         System.out.println(str1.compareTo(str2)); // return type is integer
         System.out.println(str1.compareToIgnoreCase(str2)); // result is not case sensitive
+        System.out.println(str1.valueOf(7));
+        System.out.println(str2.toCharArray()); // returns the char Array which backs the Strings in Java
 
 
         // How string is being stored inside of the memory
