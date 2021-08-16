@@ -1,7 +1,7 @@
 public class StringComparison {
 
     public static void stringComparison(String str, String str1){
-        if(str == str1){
+        if(str.equals(str1)){
             System.out.println("Both are equal");
         } else{
             System.out.println("Both are not equal");
