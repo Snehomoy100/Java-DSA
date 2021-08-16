@@ -16,7 +16,7 @@ public class Strings {
 
         // How string is being stored inside of the memory
         String str = "abcd"; // stored inside of String Pool in the heap memory
-        str = "hoola";
+        str = "hoola"; // Concatination is allowed but change of any char inside of the string is not allowed in Java
         String newStr = new String("abcd"); // stored inside of the Heap memory
         newStr.setCharAt(3) = "g"; // Strings are immutable in java
         System.out.println(str == newStr); // returns false
