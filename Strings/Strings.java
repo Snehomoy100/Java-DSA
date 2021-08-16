@@ -1,6 +1,6 @@
 public class Strings {
     public static void main(String[] args) {
-        char arr[] = {'C', 'o', 'd', 'i', 'n', 'g'};
+        char arr[] = {'C', 'o', 'd', 'i', 'n', 'g'}; // Strings are char arrays under the hood
         System.out.println(arr[4]);
 
         // Strings are char arrays under the hood
