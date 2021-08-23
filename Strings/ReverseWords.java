@@ -1,26 +1,11 @@
 public class ReverseWords {
 
-    public static void reverseTheWords(char[] str){
-        reverseString(str);
-
+    public static String reveString(String str){
+        String result = "";
         int i = 0;
-        while(str[i] != ' '){
-            char temp = str[i];
-    
-        }
-    }
-
-    public static void reverseString(char[] str){
-        int start = 0;
-        int end  = (str.length - 1);
-
-        while(start <= end){
-            char temp = str[start];
-            str[start] = str[end];
-            str[end] = temp;
-
-            start++;
-            end--;
+        int n = str.length();
+        while(i,n){
+            while()
         }
     }
     public static void main(String[] args) {
