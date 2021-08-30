@@ -24,14 +24,30 @@ class BruteForce {
 }
 
 
+
 class MostOptimal {
 
     // Time Complexity: O(n)
     // Space Complexity: O(1) ** KADANE's Algorithm **
-    public static maxSubArraySum(int[] arr){
+    public static int maxSubArraySum(int[] arr){
+        int sum = 0;
+        int maxSum =  arr[0];
+        for(int i=0; i<arr.length; i++){
+            sum += arr[i];
+            if(sum > maxSum) {
+                maxSum = sum;
+            };
+            if(sum < 0){
+                sum = 0;
+            }
+        }
 
+        return maxSum;
     }
+
     public static void main(String[] args) {
-        
+        int[] arr = {-3, 4, -1, 0, -2, 6, 2};
+        int maxSum = maxSubArraySum(arr);
+        System.out.println("Maximum sum of sub arrays is: " + maxSum);
     }
 }
