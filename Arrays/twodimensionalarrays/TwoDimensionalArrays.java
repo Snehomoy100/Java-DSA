@@ -9,5 +9,6 @@ public class TwoDimensionalArrays {
             }
         }
         System.out.println(arr[2][3]); // output: 6
+        System.out.println(arr[4][5]); // ArrayIndexOutOfBoundsException
     }
 }
