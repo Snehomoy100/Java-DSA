@@ -9,7 +9,7 @@ public class Storage {
         System.out.println(arr2d); // referce address of the 2-D array
         System.out.println(arr2d[0]); // referce address of the first array stored inside of the 2-D array
         System.out.println(arr2d[1][3]); // prints the element present at the 2nd array's 3rd index stored inside of the 2-D array
-        System.out.println(arr2d.length); // prints - 2 (as it has 2 dimensions only)
+        System.out.println(arr2d.length); // prints - 2 (as it has only 2 dimensions)
         System.out.println(arr2d[2].length); // prints the length of the array present at 2nd index inside of the 2-D array
 
     }
