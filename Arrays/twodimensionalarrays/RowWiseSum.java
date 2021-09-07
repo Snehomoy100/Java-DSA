@@ -21,6 +21,7 @@ public class RowWiseSum {
         }
     }
     
+    
     public static int[][] takeInput(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the no. of rows: ");
