@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Strings",
         "Java-Basics",
         "Arrays",
-        "Strings"
+        "Recursion"
     ]
 }
