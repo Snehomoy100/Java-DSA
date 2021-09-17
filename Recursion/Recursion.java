@@ -12,6 +12,6 @@ public class Recursion {
         }
 
         System.out.println(n);
-        print(n + 1);
+        print(n + 1); // (n + 1) -> recurrance relation & the print() func is a recursive function
     }
 }
