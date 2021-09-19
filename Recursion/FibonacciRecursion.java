@@ -1,6 +1,6 @@
 public class FibonacciRecursion {
     public static void main(String[] args) {
-        System.out.println(fibonacciNumbers(6));
+        System.out.println(fibonacciNumbers(1));
     }
 
     public static int fibonacciNumbers(int n){
