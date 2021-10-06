@@ -2,6 +2,8 @@ package problemsonarray;
 
 public class EquilibriumIndex {
 
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
 
     public static int totalSum(int[] arr){
         int sum = 0;
