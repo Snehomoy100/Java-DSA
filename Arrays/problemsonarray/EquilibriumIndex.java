@@ -20,14 +20,14 @@ public class EquilibriumIndex {
         int i = 0;
         
         while(i < arr.length){
-            rightSum = rightSum - arr[i];
+            rightSum -= arr[i];
 
             if(leftSum == rightSum){
                 return i;
             }
             i = i + 1;
 
-            leftSum = leftSum - arr[i - 1];
+            leftSum += arr[i - 1];
         }
 
         return -1;
