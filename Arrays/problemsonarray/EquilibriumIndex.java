@@ -13,7 +13,6 @@ public class EquilibriumIndex {
         return sum;
     }
 
-
     public static int equilibriumIndex(int[] arr){
         int leftSum = 0;
         int rightSum = totalSum(arr);
