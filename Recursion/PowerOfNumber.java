@@ -11,11 +11,11 @@ public class PowerOfNumber {
             return 0;
         }
 
-        if(n == 0){
+        if(n == 0){ // base cases
             return 1;
         }
 
-        return(x * (powerOfNumber(x, (n-1))));
+        return(x * (powerOfNumber(x, (n-1)))); // recurrance relation
     }
     public static void main(String[] args) {
         int x = 2;
