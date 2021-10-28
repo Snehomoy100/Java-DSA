@@ -22,7 +22,6 @@ public class ContainerWithMostWater {
     // Most Optimal Approach
     // Time Complexity: O(n)
     // Space Complexity: O(1)
-    
     public static int containerWithMostWaterMostOptimal(int[] arr){
         int i = 0;
         int j = arr.length - 1;
