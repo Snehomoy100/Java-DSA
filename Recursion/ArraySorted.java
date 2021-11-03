@@ -16,11 +16,20 @@ public class ArraySorted {
         boolean smallAns = checkSorted(smallInput);
 
         // if the small answer is sorted
-        if(smallAns){
-            
+        if(!smallAns){
+            return false;
+        }
+
+        // if the element at 0th index is lesser than 1st index
+        if(input[0] < input[1]){
+            return true;
+        } else{
+            return false;
         }
     }
     public static void main(String[] args) {
-        
+        int[] input = {1, 3, 4, 6, 9};
+        boolean ans = checkSorted(input);
+        System.out.println(ans);
     }
 }
