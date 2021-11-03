@@ -1,5 +1,7 @@
 public class ArraySorted {
 
+    // to check if an array is sorted or not using recursion
+
     public static boolean checkSorted(int[] input){
         // base case
         if(input.length <= 1){
@@ -27,6 +29,7 @@ public class ArraySorted {
             return false;
         }
     }
+
     public static void main(String[] args) {
         int[] input = {1, 3, 4, 6, 9};
         boolean ans = checkSorted(input);
