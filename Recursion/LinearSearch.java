@@ -10,6 +10,8 @@ public class LinearSearch {
         System.out.println(list);
         linearSearchArrayList(arr, 0, 0, new ArrayList<>()); // passing ArrayList as an argument
         System.out.println(list);
+        linearSearchWithoutPassing(arr, index, x);
+        System.out.println(list);
     }
 
     public static int linearSearch(int[] arr, int index, int x){
@@ -53,7 +55,7 @@ public class LinearSearch {
         linearSearchMultipleOccurances(arr, index + 1, x);
     }
 
-    
+
     public static ArrayList<Integer> linearSearchArrayList(int[] arr, int index, int x, ArrayList<Integer> list){
         // passing ArrayList as an argument in the recursive function
         if(index == arr.length){
@@ -65,5 +67,11 @@ public class LinearSearch {
         }
 
         return(linearSearchArrayList(arr, index + 1, x, list));
+    }
+
+    
+    public static ArrayList<Integer> linearSearchWithoutPassing(int[] arr, int index, int x){ // without passing the ArrayList as an argument
+
+
     }
 }
