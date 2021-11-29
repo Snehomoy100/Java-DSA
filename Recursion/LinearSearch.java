@@ -69,7 +69,7 @@ public class LinearSearch {
         return(linearSearchArrayList(arr, index + 1, x, list));
     }
 
-    
+    // TODO: the most important part
     public static ArrayList<Integer> linearSearchWithoutPassing(int[] arr, int index, int x){ // without passing the ArrayList as an argument
 
 
