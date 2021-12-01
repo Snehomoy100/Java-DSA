@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class LinearSearch {
     public static void main(String[] args) {
         int[] arr = {12, 3, 56, 0, 6, 0};
@@ -69,10 +68,26 @@ public class LinearSearch {
         return(linearSearchArrayList(arr, index + 1, x, list));
     }
 
-    
+
     // TODO: the most important part
     public static ArrayList<Integer> linearSearchWithoutPassing(int[] arr, int index, int x){ // without passing the ArrayList as an argument
+        ArrayList<Integer> ans = new ArrayList<>();
 
+        // base case
+        if(index == arr.length){
+            return ans;
+        }
+
+        // calculations
+        if(arr[index] == x){
+            ans.add(index);
+        }
+
+        ArrayList<Integer> smallAns = linearSearchWithoutPassing(arr, index + 1, 56);
+
+        ans.addAll(smallAns);
+
+        return ans;
 
     }
 }
