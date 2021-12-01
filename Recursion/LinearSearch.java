@@ -9,8 +9,8 @@ public class LinearSearch {
         System.out.println(list);
         linearSearchArrayList(arr, 0, 0, new ArrayList<>()); // passing ArrayList as an argument
         System.out.println(list);
-        linearSearchWithoutPassing(arr, index, x);
-        System.out.println(list);
+        System.out.println(linearSearchWithoutPassing(arr, 0, 0)); // without passing the arraylist as an argument
+        
     }
 
     public static int linearSearch(int[] arr, int index, int x){
@@ -83,7 +83,7 @@ public class LinearSearch {
             ans.add(index);
         }
 
-        ArrayList<Integer> smallAns = linearSearchWithoutPassing(arr, index + 1, 56);
+        ArrayList<Integer> smallAns = linearSearchWithoutPassing(arr, index + 1, x);
 
         ans.addAll(smallAns);
 
