@@ -6,5 +6,10 @@ public class BubbleSort {
 
     public static void bubbleSortRecursion(int[] arr, int lastIndex){
         
+        // base case
+        if(lastIndex == 0) return;
+
+        if()
+
     }
 }
