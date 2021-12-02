@@ -16,7 +16,7 @@ public class Pattern {
             patternPrinting(row - 1, 0);
         }
     }
-
+    
     public static void patternPrinting2(int row, int col){
         // base case
         if(row == 0) return;
