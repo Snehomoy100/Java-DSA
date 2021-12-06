@@ -3,7 +3,9 @@ import java.util.Arrays;
 // Merge Sort using extra space
 public class MergeSort {
     public static void main(String[] args) {
-        
+        int[] arr = {6, 12, 18, 9, 2};
+        int[] ans = mergeSort(arr);
+        System.out.println(Arrays.toString(ans));
     }
 
     public static int[] mergeSort(int[] arr){
@@ -16,7 +18,7 @@ public class MergeSort {
         int mid = (arr.length / 2);
 
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));
-        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length - 1));
+        int[] right = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
 
         // helper function or helper method
         return merge(left, right);
