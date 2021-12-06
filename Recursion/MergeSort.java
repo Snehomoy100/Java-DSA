@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 // Merge Sort using extra space
-public class MergeSort {
+class MergeSortOne {
     public static void main(String[] args) {
         int[] arr = {6, 12, 18, 9, 2};
         int[] ans = mergeSort(arr);
@@ -60,4 +60,12 @@ public class MergeSort {
         return mergedArray;
     }
 
+}
+
+
+// Merge sort using no-extra space (in-place)
+class MergeSortTwo{
+    public static void main(String[] args) {
+        
+    }
 }
