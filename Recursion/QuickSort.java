@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 class QuickSort {
     
+    // Time Complexity: O(nlogn) (best & average case) & O(n^2) (worst case)
+    // primarily used in LinkedList & not stable sorting algo
     
     public static void quickSort(int[] arr, int low, int high){
 
