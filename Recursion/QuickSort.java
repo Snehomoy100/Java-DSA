@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class QuickSort {
     
     // Time Complexity: O(nlogn) (best & average case) & O(n^2) (worst case)
-    // primarily used in LinkedList & not stable sorting algo
+    // primarily used in LinkedList & not stable sorting algo & in case arrays merge sort is preferred because of array's contigous memory allocation
     
     public static void quickSort(int[] arr, int low, int high){
 
