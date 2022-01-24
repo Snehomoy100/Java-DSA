@@ -22,6 +22,8 @@ class SkipString {
 
 
 class SkipSpecialString {
+
+    // skip the string only if the remaining is not equals to that
     public static void main(String[] args) {
         System.out.println(skipSpecialString("helloiamsnehomoy", "sne", "snehomoy"));
     }
@@ -32,8 +34,8 @@ class SkipSpecialString {
             return "";
         }
 
-        if(str.startsWith(subTarget) && str.startsWith(target)){
-            return skipSpecialString(str.substring(subTarget.length()), target, subTarget);
+        if(str.startsWith(target) && str.startsWith(subTarget)){
+            return skipSpecialString(str.substring(target.length()), target, subTarget);
         } else{
             return (str.charAt(0) + skipSpecialString(str.substring(1), target, subTarget));
         }
