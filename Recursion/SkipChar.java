@@ -10,7 +10,8 @@ public class SkipChar {
     }
 
     public static String skipChar(String str, char target){
-        if(str.isEmpty()){
+        // base case 
+        if(str.isEmpty()){ // str.length() = 0
             return "";
         }
 
