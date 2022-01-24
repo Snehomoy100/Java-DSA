@@ -10,7 +10,7 @@ public class SkipChar {
     }
 
     public static String skipChar(String str, char target){
-        if(str.length() == 0){
+        if(str.isEmpty()){
             return "";
         }
 
