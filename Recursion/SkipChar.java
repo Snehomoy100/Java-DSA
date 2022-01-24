@@ -4,6 +4,8 @@ public class SkipChar {
         char target = 'l';
         String ans = skipChar(str, target);
         System.out.println(ans);
+        System.out.println(ans.length());
+
 
     }
 
