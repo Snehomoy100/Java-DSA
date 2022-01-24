@@ -1,6 +1,6 @@
 public class SkipChar {
     public static void main(String[] args) {
-        String str = "helloiamhela";
+        String str = "hello";
         char target = 'l';
         String ans = skipChar(str, target);
         System.out.println(ans);
