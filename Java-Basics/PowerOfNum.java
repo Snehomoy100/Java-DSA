@@ -11,6 +11,8 @@ public class PowerOfNum {
     }
     public static void main(String[] args) {
         int ans = power(2, 3);
+
+        
         System.out.println(ans);
     }
 }
