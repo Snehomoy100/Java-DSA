@@ -41,8 +41,8 @@ public class ArrayListSample {
         System.out.println();
 
         // for each loop (a better way of getting all the elements stored inside of the ArrayList
-        for(int index: arr1){
-            System.out.println(index);
+        for(int index: arr1){ // here index is the element of the ArrayList itself
+            System.out.println(index); 
         }
 
 
