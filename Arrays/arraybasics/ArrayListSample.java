@@ -40,7 +40,7 @@ public class ArrayListSample {
 
         System.out.println();
 
-        // for each loop (a better way of getting all the elements stored inside of the ArrayList)
+        // for each loop (a better way of getting all the elements stored inside of the ArrayList
         for(int index: arr1){
             System.out.println(index);
         }
