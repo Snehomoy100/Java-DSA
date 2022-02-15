@@ -16,5 +16,7 @@ public class ArrayListSample {
         System.out.println(arr.size());
         System.out.println(arr.get(0));
         System.out.println(arr.get(3));
+        arr.set(1, 23);
+        System.out.println(arr.get(1)); // for changing a particular element of a particular index
     }
 }
