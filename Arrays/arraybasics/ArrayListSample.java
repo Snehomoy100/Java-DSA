@@ -31,6 +31,8 @@ public class ArrayListSample {
         arr1.add(4);
         arr1.add(6);     
         arr1.add(8);
+        arr1.add(2, 10); // for adding an element at the specific index
+
         
         
         // for iterating over ArrayList
