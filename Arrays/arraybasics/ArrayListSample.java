@@ -10,13 +10,22 @@ public class ArrayListSample {
         arr.add(20); // for adding any element in the ArrayList 
         arr.add(30);
         arr.add(40);
+
         System.out.println(arr.size()); // for getting the size of the ArrayList
         System.out.println(arr.get(1)); // for accessing a particular element using the index
+
         arr.add(3, 34);
+
         System.out.println(arr.size());
         System.out.println(arr.get(0));
         System.out.println(arr.get(3));
+
         arr.set(1, 23);
+
         System.out.println(arr.get(1)); // for changing a particular element of a particular index
+        arr.remove(2); // for removing a particular element at a specific index
+        System.out.println(arr.size());
+
+        
     }
 }
