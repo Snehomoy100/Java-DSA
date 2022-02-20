@@ -23,7 +23,7 @@ public class LinkedList {
     public static void printLinkedlist(Node<Integer> head){
         System.out.println(head.data); // prints the first element
         System.out.println(head.next.data); // prints the 2nd element
-        System.out.println(head.next.next.data); // prints the 3rd element
+        System.out.println(head.next.next.data); // prints the 3rd element 
         System.out.println(head.next.next.next.data); // prints the 4th element
     }
     public static void main(String[] args) {
