@@ -12,7 +12,7 @@ public class LinkedList {
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
-        n4.next = null;
+        n4.next = null; // next for the last element would be null
 
         return n1;
 
