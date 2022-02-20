@@ -6,4 +6,5 @@ public class Node<T> { // <> are the generics
     Node(T data){
         this.data = data;
     }
+    
 }
