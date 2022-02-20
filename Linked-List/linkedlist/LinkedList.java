@@ -2,6 +2,7 @@ package linkedlist;
 
 public class LinkedList {
 
+    // creating a linkedlist
     public static Node<Integer> createLinkedlist(){
         Node<Integer> n1 = new Node<>(10);
         Node<Integer> n2 = new Node<>(20);
@@ -17,8 +18,16 @@ public class LinkedList {
         return n1;
 
     }
+
+    // printing a linkedlist
+    public static void printLinkedlist(Node<Integer> head){
+        System.out.println(head.data); // prints the first element
+        System.out.println(head.next.data); // prints the 2nd element
+        System.out.println(head.next.next.data); // prints the 3rd element
+        System.out.println(head.next.next.next.data); // prints the 4th element
+    }
     public static void main(String[] args) {
         Node<Integer> head = createLinkedlist();
-        System.out.println(head.next);
+        printLinkedlist(head);
     }
 }
