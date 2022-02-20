@@ -28,6 +28,7 @@ public class LinkedList {
     }
     public static void main(String[] args) {
         Node<Integer> head = createLinkedlist();
+        System.out.println(" Address of this element: " + head + " the data: " + head.data + " the address of next element: " + head.next);
         printLinkedlist(head);
     }
 }
