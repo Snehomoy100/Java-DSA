@@ -20,11 +20,12 @@ public class SampleLinkedList {
             temp = temp.next;
         }
     }
-    
+
     public static void main(String[] args) {
         Node<Integer> node1 = new Node<>(10);
         Node<Integer> node2 = new Node<>(20);
-        node2.next = node1;
-        print(node2); // prints 20 10
+        node1.next = node2;
+        increment(node1);
+        print(node2); // prints 11 21
     }
 }
