@@ -28,9 +28,9 @@ public class LinkedList {
     }
 
     public static void printLL(Node<Integer> head){
-        while (head != null) {
+        while (head != null) { // conditon of the loop
             System.out.print(head.data + " ");
-            head = head.next;
+            head = head.next; // passing the reference of the next element of the list
         }
         System.out.println();
     }
