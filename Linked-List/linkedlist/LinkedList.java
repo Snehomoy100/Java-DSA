@@ -27,6 +27,7 @@ public class LinkedList {
         System.out.println(head.next.next.next.data); // prints the 4th element
     }
 
+    // printing linkedlist using loop for avoiding repeatative task
     public static void printLL(Node<Integer> head){
         while (head != null) { // conditon of the loop
             System.out.print(head.data + " ");
