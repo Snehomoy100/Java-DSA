@@ -34,6 +34,12 @@ public class LinkedList {
             head = head.next; // passing the reference of the next element of the list
         }
         System.out.println();
+        // in this case this loop will not run as the head is already null
+        while (head != null) { // conditon of the loop
+            System.out.print(head.data + " ");
+            head = head.next; // passing the reference of the next element of the list
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
         Node<Integer> head = createLinkedlist(); // this is the referring to the memory address of the first element of the linkedlist
