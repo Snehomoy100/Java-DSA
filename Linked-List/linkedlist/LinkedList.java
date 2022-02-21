@@ -29,15 +29,18 @@ public class LinkedList {
 
     // printing linkedlist using loop for avoiding repeatative task
     public static void printLL(Node<Integer> head){
-        while (head != null) { // conditon of the loop
-            System.out.print(head.data + " ");
-            head = head.next; // passing the reference of the next element of the list
+
+        Node<Integer> temp = head; // standard practice for avoiding pass by value confusions
+
+        while (temp != null) { // conditon of the loop
+            System.out.print(temp.data + " ");
+            temp = temp.next; // passing the reference of the next element of the list
         }
         System.out.println();
         // in this case this loop will not run as the head is already null
-        while (head != null) { // conditon of the loop
-            System.out.print(head.data + " ");
-            head = head.next; // passing the reference of the next element of the list
+        while (temp != null) { // conditon of the loop
+            System.out.print(temp.data + " ");
+            temp = temp.next; // passing the reference of the next element of the list
         }
         System.out.println();
     }
@@ -46,5 +49,7 @@ public class LinkedList {
         // System.out.println(" Address of this element: " + head + " the data: " + head.data + " the address of next element: " + head.next);
         // printLinkedlist(head);
         printLL(head);
+        printLL(head);
+
     }
 }
