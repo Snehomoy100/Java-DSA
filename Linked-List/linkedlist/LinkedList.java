@@ -52,7 +52,8 @@ public class LinkedList {
         Node<Integer> head = createLinkedlist(); // this is the referring to the memory address of the first element of the linkedlist
         // System.out.println(" Address of this element: " + head + " the data: " + head.data + " the address of next element: " + head.next);
         // printLinkedlist(head);
-        printLL(head);
+        // printLL(head);
+        incrementExample(head); 
         printLL(head);
 
     }
