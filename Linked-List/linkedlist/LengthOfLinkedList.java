@@ -22,6 +22,6 @@ public class LengthOfLinkedList {
     }
     public static void main(String[] args) {
         Node<Integer> head = createLinkedlist();
-        linkedListLength(head);
+        System.out.println(linkedListLength(head));
     }
 }
