@@ -1,5 +1,7 @@
 package linkedlist;
 
+import java.util.*;
+
 public class PrintNode {
 
     public static Node<Integer> createLL(){
@@ -38,10 +40,15 @@ public class PrintNode {
             }
             temp = temp.next;
         }
+        if(index > count){
+            System.out.println("The index is out of range...!");
+        }
     }
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         Node<Integer> head = createLL();
-        int index = 3;
+        int index = input.nextInt();
         printNode(head, index);
+        input.close();
     }
 }
