@@ -19,19 +19,29 @@ public class PrintNode {
 
     }
 
+    public static void printLL(Node<Integer> head){
+        Node<Integer> temp = head;
+        while(temp != null){
+            System.out.print(temp.data + " ");
+        }
+        System.out.println();
+    }
+
     public static void printNode(Node<Integer> head, int index){
         Node<Integer> temp = head;
         int count = -1;
 
         while(temp != null){
+            count++;
             if(count == index){
                 System.out.println(temp.data);
             }
-            count++;
             temp = temp.next;
         }
     }
     public static void main(String[] args) {
-        
+        Node<Integer> head = createLL();
+        int index = 3;
+        printNode(head, index);
     }
 }
