@@ -22,8 +22,8 @@ public class LengthOfLinkedList {
         Node<Integer> temp = head;
         int length = -1; // as the Node no of first element should be 0
         while(temp != null){
-            temp = temp.next;
             length++;
+            temp = temp.next;
         }
         return length;
     }
