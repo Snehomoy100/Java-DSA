@@ -46,6 +46,7 @@ public class LinkedList {
     }
 
     public static void incrementExample(Node<Integer> head){
+        
         head.data++;
     }
     public static void main(String[] args) {
