@@ -3,6 +3,7 @@ package linkedlist;
 public class LengthOfLinkedList {
 
     public static Node<Integer> createLinkedlist(){
+        
         // linked list creation phase
         Node<Integer> n1 = new Node<Integer>(10);
         Node<Integer> n2 = new Node<Integer>(20);
