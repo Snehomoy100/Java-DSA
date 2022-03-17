@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class NodeLinkedList {
 
-    // insert a node in a given linkedlist
+    // Insert a node in a given linkedlist
     // Time Complexity: O(n)
 
     public static Node<Integer> insertNode(Node<Integer> head, int targetIndex, int data){
+        if(head == null) return null; // edge case 1
+
         Node<Integer> temp = head;
         int indexCount = 0;
         while(temp != null){
@@ -20,6 +22,9 @@ public class NodeLinkedList {
             indexCount++;
             temp = temp.next;
         }
+
+        if(targetIndex > indexCount) return null; //edge case 2
+
         return head;
     }
 
