@@ -16,7 +16,23 @@ public class UserInputLinkedList {
     }
 
     public static Node<Integer> takeInput(){
-        Scanner input 
+        Scanner input = new Scanner(System.in);
+        int data = input.nextInt();
+        Node<Integer> head = null;
+        while(data != -1){
+            Node<Integer> currentNode = new Node<Integer>(data);
+            if(head == null){
+                head = currentNode;
+            } else{
+                Node<Integer> tail = head;
+                while(tail.next != null){
+                    tail = tail.next;
+                }
+                tail.next = currentNode; 
+            }
+            data = input.nextInt();           
+        }
+        return head;
     }
 
     public static void main(String[] args) {
