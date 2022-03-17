@@ -2,6 +2,8 @@ package linkedlist;
 
 import java.util.Scanner;
 
+    // O(n^2) approach
+    
 public class UserInputLinkedList {
 
     // taking user input as the elements of Linked List
