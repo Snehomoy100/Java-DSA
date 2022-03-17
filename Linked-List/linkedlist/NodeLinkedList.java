@@ -13,7 +13,7 @@ public class NodeLinkedList {
         while(temp != null){
             if(indexCount == (targetIndex - 1)){
                 Node<Integer> currentNode = new Node<Integer>(data), nextNode = null;
-                nextNode = temp.next;
+                nextNode = temp.next; // for the connection memorizing purposes 
                 temp.next = currentNode;
                 currentNode.next = nextNode;
             }
