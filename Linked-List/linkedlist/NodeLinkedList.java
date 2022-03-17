@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class NodeLinkedList {
 
     // insert a node in a given linkedlist
+    // Time Complexity: O(n)
 
     public static Node<Integer> insertNode(Node<Integer> head, int targetIndex, int data){
         Node<Integer> temp = head;
@@ -39,8 +40,19 @@ public class NodeLinkedList {
         }
         return head;
     }
-    
+
+    public static void printLL(Node<Integer> head){
+        Node<Integer> temp = head;
+        while(temp != null){
+            System.out.println(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args){
-        
+        Node<Integer> head = takeInput();
+        head = insertNode(head, 2, 3);
+        printLL(head);
     }
 }
