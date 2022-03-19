@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class FindNode {
 
+    // Time Complexity: O(n)
+    
     public static int returnIndex(Node<Integer> head, int value){
         Node<Integer> temp = head;
         int index = 0;
@@ -27,7 +29,7 @@ public class FindNode {
                 head = currentHead;
                 tail = currentHead;
             } else {
-                tail = currentHead;
+                tail.next = currentHead;
                 tail = tail.next;
             }
             data = input.nextInt();
@@ -35,11 +37,9 @@ public class FindNode {
         return head;
     }
 
-    public static void printLL(Node<Integer> head){
-        Node<Integer> temp = head;
-        
-    }
     public static void main(String[] args) {
-        
+        Node<Integer> head = takeInput();
+        int value = 13;
+        System.out.println(returnIndex(head, value));
     }
 }
