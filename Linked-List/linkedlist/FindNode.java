@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class FindNode {
 
     // Time Complexity: O(n)
-    
+
     public static int returnIndex(Node<Integer> head, int value){
+        if(head == null) return -1; // edge case for empty linkedlist
+
         Node<Integer> temp = head;
         int index = 0;
         while(temp != null){
