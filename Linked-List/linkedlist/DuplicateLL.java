@@ -19,6 +19,22 @@ public class DuplicateLL {
         }
         return head;
     }
+
+    public static void printNode(Node<Integer> head, int index){
+        Node<Integer> temp = head;
+        int count = -1;
+
+        while(temp != null){
+            count++;
+            if(count == index){
+                System.out.println(temp.data);
+            }
+            temp = temp.next;
+        }
+        if(index > count){
+            System.out.println("The index is out of range...!");
+        }
+    }
     public static void main(String[] args) {
         
     }
