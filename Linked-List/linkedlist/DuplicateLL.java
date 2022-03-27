@@ -36,8 +36,19 @@ public class DuplicateLL {
         return head;
     }
 
+    public static void printLinkedList(Node<Integer> head){
+        Node<Integer> temp = head;
+        while(temp!=null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
-        
+        Node<Integer> head = takeInput();
+        Node<Integer> removedDuplicate = deleteDuplicate(head);
+        printLinkedList(removedDuplicate);
     }
 }
