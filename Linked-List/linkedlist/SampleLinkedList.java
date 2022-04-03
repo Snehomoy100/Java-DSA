@@ -1,6 +1,6 @@
 package linkedlist;
 
-public class SampleLinkedList {
+class SampleLinkedList {
 
     public static void print(Node<Integer> head){
         Node<Integer> temp = head;
@@ -27,5 +27,22 @@ public class SampleLinkedList {
         node1.next = node2;
         increment(node1);
         print(node2); // prints 11 21
+    }
+}
+
+
+class AnotherSample {
+
+    public static int ansLinkedList(Node<Integer> head){
+        Node<Integer> temp = head;
+        int storedAns = 0;
+        while(temp != null){
+            storedAns = storedAns + ((temp.data * 10) + temp.next.data);
+            temp = temp.next;
+        }
+        return storedAns;
+    }
+    public static void main(String[] args) {
+        
     }
 }
