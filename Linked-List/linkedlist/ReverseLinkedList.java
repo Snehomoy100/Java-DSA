@@ -2,13 +2,19 @@ package linkedlist;
 
 import java.util.*;
 
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 public class ReverseLinkedList {
 
     public static void reverseLL(Node<Integer> head){
+
+        // base case 
         if(head == null){
             return;
         }
 
+        // recursive call
         reverseLL(head.next);
         System.out.print(head.data + " ");
     }
