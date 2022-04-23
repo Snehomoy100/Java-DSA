@@ -10,4 +10,9 @@ public class Student {
     private int batchNo; // private modifier
     public String courseName; // public modifier
     boolean isEnrolled; // default modifier
+
+    // method props
+    public int getRoll(int roll){
+        return roll;
+    }
 }

@@ -7,5 +7,7 @@ public class Student2 {
         Student s1 = new Student();
         s1.courseName = "Computer Science";
         System.out.println(s1.courseName);
+        int rollNo = s1.getRoll(10);
+        System.out.println(rollNo);
     }
 }
