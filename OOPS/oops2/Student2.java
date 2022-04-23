@@ -1,6 +1,6 @@
 package oops2;
 
-import oops.Student;
+import oops.Student; // for importing functionalities of the class of diff packages
 
 public class Student2 {
     public static void main(String[] args) {
