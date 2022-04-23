@@ -5,4 +5,9 @@ public class Student {
     int rollNo;
     String name;
     int studentId;
+
+    // access modifiers
+    private int batchNo; // private modifier
+    public String courseName; // public modifier
+    boolean isEnrolled; // default modifier
 }
