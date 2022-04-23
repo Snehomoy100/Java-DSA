@@ -8,6 +8,7 @@ public class OopsSample {
         s1.name = "Snehomoy"; // properties of the class
         System.out.println(s1.name + " " + s1.rollNo);
         System.out.println(s1); // stores the reference address
+        System.out.println(s1.studentId); // the props takes default values
     }
     
 }
