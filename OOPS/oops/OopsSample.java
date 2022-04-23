@@ -10,7 +10,10 @@ public class OopsSample {
         System.out.println(s1); // stores the reference address
         System.out.println(s1.studentId); // the props takes default values
 
-        //
+        // access modifiers example
+        s1.studentId = 1;
+        int roll = s1.getRoll(23);
+        System.out.println(s1.studentId + " " + roll);
     }
     
 }
