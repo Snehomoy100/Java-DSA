@@ -15,4 +15,13 @@ public class Student {
     public int getRoll(int roll){
         return roll;
     }
+
+    // setters
+    public void setBatch(int number){
+        batchNo = number;
+    }
+    // getters
+    public int getBatch(){
+        return batchNo;
+    }
 }
