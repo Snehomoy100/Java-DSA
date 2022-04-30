@@ -15,6 +15,8 @@ public class OopsSample {
         int roll = s1.getRoll(23);
         System.out.println(s1.studentId + " " + roll);
         s1.setBatch(10); // setters
+        s1.setBatch(10); // setters
+
         int batchNo = s1.getBatch(); // getters
         System.out.println(batchNo);
     }
