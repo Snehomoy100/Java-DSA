@@ -10,5 +10,7 @@ public class Student2 {
         System.out.println(s1.courseName);
         int rollNo = s1.getRoll(10); // getters 
         System.out.println(rollNo);
+        s1.setAge(21);
+        System.out.println(s1.getAge());
     }
 }
