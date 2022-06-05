@@ -1,24 +1,12 @@
-package oops; // this package stores the Student class inside of it 
+package oops;
 
 public class OopsSample {
-    public static void main(String[] args) {
-        // student class be accessed over here because of the oops package
-        Student s1 = new Student(); // creation of a new object (instance of a class)
-        s1.rollNo = 10; // properties of the class
-        s1.name = "Snehomoy"; // properties of the class
-        System.out.println(s1.name + " " + s1.rollNo);
-        System.out.println(s1); // stores the reference address
-        System.out.println(s1.studentId); // the props takes default values
-
-        // access modifiers example
-        s1.studentId = 1;
-        int roll = s1.getRoll(23);
-        System.out.println(s1.studentId + " " + roll);
-        s1.setBatch(10); // setters
-        s1.setBatch(10); // setters
-
-        int batchNo = s1.getBatch(); // getters
-        System.out.println(batchNo);
+    public static void main(String[] args){
+        for(int row = 1; row <= 9; row++){
+            for(int col = 1; col <= row; col++){
+                System.out.println(col + " ");
+            }
+            System.out.println();
+        }
     }
-    
 }
