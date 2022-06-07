@@ -14,8 +14,5 @@ public class Student2 {
         System.out.println(s1.getAge());
         // constructors
 
-
-
-        
     }
 }
