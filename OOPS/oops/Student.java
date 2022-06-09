@@ -6,6 +6,9 @@ public class Student {
     String name;
     int studentId;
 
+    // final keyword
+    final double conversionRate = 0.95;
+
     // access modifiers
     private int batchNo; // private modifier
     public String courseName; // public modifier
