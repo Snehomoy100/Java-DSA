@@ -5,6 +5,7 @@ public class Student {
     int rollNo;
     String name;
     int studentId;
+    final private int enrollmentNo; 
 
     // final keyword
     final double conversionRate = 0.95;
@@ -14,6 +15,8 @@ public class Student {
     public String courseName; // public modifier
     boolean isEnrolled; // default modifier
     private int age;
+
+
 
     // method props
     public int getRoll(int roll){
@@ -42,28 +45,29 @@ public class Student {
     }
 
     // constructor for both the params
-    public Student(String name, int rollNo){
+    public Student(String name, int rollNo, int enrollmentNo){
         this.name = name;
         this.rollNo = rollNo;
+        this.enrollmentNo = enrollmentNo; // final keyword values can be modified only once inside of the class
     }
 
-    // constructor for one of the params
-    public Student(String name){
-        this.name = name;
-        // rollNo will get it's default data type value
-    }
+    // // constructor for one of the params
+    // public Student(String name){
+    //     this.name = name;
+    //     // rollNo will get it's default data type value
+    // }
 
-    // constructor without any params
-    public Student(){
-        name = "ABC";
-        rollNo = 0;
-    }
+    // // constructor without any params
+    // public Student(){
+    //     name = "ABC";
+    //     rollNo = 0;
+    // }
 
     // there will not be any access modifiers in case of only class statement
 
     // print method
     public void print(){
-        System.out.println(name + " " + rollNo);
+        System.out.println(name + " " + rollNo + " " + enrollmentNo);
     }
 
 }
