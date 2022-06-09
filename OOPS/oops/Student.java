@@ -56,6 +56,8 @@ public class Student {
         rollNo = 0;
     }
 
+    // there will not be any access modifiers in case of only class statement
+
     // print method
     public void print(){
         System.out.println(name + " " + rollNo);
