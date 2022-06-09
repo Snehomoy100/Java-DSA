@@ -38,4 +38,27 @@ public class Student {
         return age;
     }
 
+    // constructor for both the params
+    public Student(String name, int rollNo){
+        this.name = name;
+        this.rollNo = rollNo;
+    }
+
+    // constructor for one of the params
+    public Student(String name){
+        this.name = name;
+        // rollNo will get it's default data type value
+    }
+
+    // constructor without any params
+    public Student(){
+        name = "ABC";
+        rollNo = 0;
+    }
+
+    // print method
+    public void print(){
+        System.out.println(name + " " + rollNo);
+    }
+
 }
