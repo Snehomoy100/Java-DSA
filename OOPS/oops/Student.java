@@ -44,7 +44,7 @@ public class Student {
         return age;
     }
 
-    
+
 
     // constructor for both the params
     public Student(String name, int rollNo, int enrollmentNo){
@@ -54,16 +54,16 @@ public class Student {
     }
 
     // // constructor for one of the params
-    // public Student(String name){
-    //     this.name = name;
-    //     // rollNo will get it's default data type value
-    // }
+    public Student(String name){
+        this.name = name;
+        // rollNo will get it's default data type value
+    }
 
-    // // constructor without any params
-    // public Student(){
-    //     name = "ABC";
-    //     rollNo = 0;
-    // }
+    // constructor without any params
+    public Student(){
+        name = "ABC";
+        rollNo = 0;
+    }
 
     // there will not be any access modifiers in case of only class statement
 
