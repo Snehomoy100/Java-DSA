@@ -34,8 +34,20 @@ public class RecursiveLinkedList {
         System.out.print(head.data + " ");
         printLLRecursive(head.next); // recursive call
     }
+
+    public static void recursiveReverseLL(Node<Integer> head){
+        // base case 
+        if(head == null){
+            return;
+        }
+
+        recursiveReverseLL(head.next); // recursive call
+        System.out.print(head.data + " "); // elements are getting printed
+    }
+
     public static void main(String[] args) {
         Node<Integer> head = takeInputLL();
-        printLLRecursive(head);
+        // printLLRecursive(head);
+        recursiveReverseLL(head);
     }
 }
