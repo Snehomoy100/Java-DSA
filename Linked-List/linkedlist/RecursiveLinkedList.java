@@ -6,6 +6,7 @@ import java.util.*;
 
 public class RecursiveLinkedList {
 
+    // so all the func calls will be stored inside of the call stack 
     public static Node<Integer> takeInputLL(){
         Scanner input = new Scanner(System.in);
         int data = input.nextInt();
