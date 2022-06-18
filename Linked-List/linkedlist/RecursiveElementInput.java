@@ -22,18 +22,22 @@ public class RecursiveElementInput {
         return head;
     }
 
-    public static void elementInput(Node<Integer> head, int currentIndex, int element){
-        // base case 
+    public static Node<Integer> elementInput(Node<Integer> head, int position, int element){
+
+        // base case
         if(head == null){
-            return;
+            return head;
         }
-        // logic part 
-        if(currentIndex == 0){
+        
+        if(position == 0){
             Node<Integer> current = new Node<Integer>(element);
-            head = current;
+            current.next = head;
+            return current;
+        } else{
+            head.next = elementInput(head.next, position - 1, element);
+            return head;
         }
-        // recursive func call
-        elementInput(head.next, currentIndex+1, element);
+        
     }
 
     public static void printLL(Node<Integer> head){
@@ -45,7 +49,7 @@ public class RecursiveElementInput {
     }
     public static void main(String[] args) {
         Node<Integer> head = takeInputLL();
-        elementInput(head, 0, 20);
+        elementInput(head, 2, 20);
         printLL(head);
     }
 }
