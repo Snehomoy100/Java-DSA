@@ -44,12 +44,13 @@ public class RecursiveElementInput {
         Node<Integer> temp = head;
         while(temp != null){
             System.out.print(temp.data + " ");
+            temp = temp.next;
         }
         System.out.println();
     }
     public static void main(String[] args) {
         Node<Integer> head = takeInputLL();
-        // Node<Integer> temp = elementInput(head, 2, 20);
+        elementInput(head, 2, 20);
         printLL(head);
     }
 }
