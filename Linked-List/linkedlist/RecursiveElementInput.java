@@ -25,7 +25,7 @@ public class RecursiveElementInput {
     public static Node<Integer> elementInput(Node<Integer> head, int position, int element){
 
         // base case
-        if(head == null && position >= 0){
+        if(head == null || position < 0){
             return head;
         }
         
@@ -49,7 +49,7 @@ public class RecursiveElementInput {
     }
     public static void main(String[] args) {
         Node<Integer> head = takeInputLL();
-        Node<Integer> temp = elementInput(head, 2, 20);
-        printLL(temp);
+        // Node<Integer> temp = elementInput(head, 2, 20);
+        printLL(head);
     }
 }
