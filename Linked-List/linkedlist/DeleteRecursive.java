@@ -4,9 +4,14 @@ import java.util.*;
 
 public class DeleteRecursive {
 
-    public static Node<Integer> delRecursive(Node<Integer> head, int position){
+    public static Node<Integer> delElementRecursive(Node<Integer> head, int position){
+        // base case 
         if(head == null || position < 0){
             return head;
+        }
+
+        if(position == 0){
+
         }
     }
 
