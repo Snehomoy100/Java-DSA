@@ -6,7 +6,7 @@ public StackUsingArray {
 
 	public StackUsingArray(){
 		data = new int[10];
-		topIndex = -1;
+		topIndex = -1; // initially topIndex remains -1 
 	}
 
 	public void push(int element){
